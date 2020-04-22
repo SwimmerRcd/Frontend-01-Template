@@ -2,7 +2,7 @@
 - 写一个正则表达式 匹配所有 Number 直接量
 
         var isValidString=function (literal){
-            return //.test(literal)
+            return /^(\.\d+|(0|[1-9]\d*)\.?\d*?)([eE][-\+]?\d+)?$|^0[bB][01]+$|^0[oO][0-7]+$|^0[xX][0-9a-fA-F]+$/.test(literal)
         }
 - 写一个 UTF-8 Encoding 的函数
 
